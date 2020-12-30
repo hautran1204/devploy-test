@@ -1,4 +1,7 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/devploy-test/'
+    : '/',
   lintOnSave: false,
   runtimeCompiler: true,
   configureWebpack: {
